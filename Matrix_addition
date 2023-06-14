@@ -1,0 +1,40 @@
+#include <stdio.h>
+void main ()
+{
+ 
+int array[10][10];
+int i, j, a, b, sum = 0;
+ 
+printf("Enter the order of the matrix\n");
+scanf("%d %d", &a, &b);
+printf("Enter the values of the matrix\n");
+for (i = 0; i < a; ++i)
+{
+for (j = 0; j < b; ++j) 
+{
+scanf("%d", &array[i][j]);
+}
+}
+ 
+for (i = 0; i < a; ++i) 
+{
+for (j = 0; j < b; ++j) 
+{
+sum = sum + array[i][j] ;
+}
+ 
+printf("Sum of the %d row is = %d\n", i, sum);sum = 0;
+ }
+sum = 0;
+for (j = 0; j < b; ++j) 
+ {
+for (i = 0; i < a; ++i)
+{
+sum = sum + array[i][j];
+}
+ 
+printf("Sum of the %d column is = %d\n", j, sum);
+sum = 0;
+  }
+  }
+
